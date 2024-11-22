@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/MainLayout.astro';
+import { SOCIALS } from "../data/socials";
+import Component from '../components/Component.astro';
 ---
 
 <Layout title='Henry'>
@@ -28,9 +30,32 @@ import Layout from '../layouts/MainLayout.astro';
 						</ul>
 					</nav>
 				</div>
+
+				{
+					SOCIALS.length && (
+						<ul
+						class="ml-1 mt-8 flex items-center justify-center lg:justify-normal"
+						aria-label="Social media"
+						>
+						{SOCIALS.map((social) => (
+							<li class="mr-5 shrink-0 text-xs">
+								<a
+									class="block hover:text-slate-200"
+									href={social.url}
+									target="_blank"
+									rel="noreferrer noopener"
+									aria-label={`${social.name} (opens in a new tab)`}
+								>
+									<span class="sr-only">{social.name}</span>
+									{<Component component={social.icon} />}
+								</a>
+							</li>
+						))}
+						</ul>
+					)
+				}
 			</header>
+
 		</div>
 	</div>
 </Layout>
-
-

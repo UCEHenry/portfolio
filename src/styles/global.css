@@ -13,7 +13,7 @@
 
 .main-layout-body {
   background-color: rgb(35, 34, 34);
-  color: rgb(226 232 240);
+  color: rgb(197, 197, 197);
   line-height: 1.625;
   position: relative;
 }
@@ -58,9 +58,9 @@
     top: 0;
     max-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 50%;
-    flex-direction: column;
     padding-top: 6rem;
     padding-bottom: 6rem;  
   }
