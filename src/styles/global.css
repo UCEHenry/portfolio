@@ -66,9 +66,15 @@
   }
 }
 
-.list-spacing {
+.nav-list {
   margin-top: 4rem;
   width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .nav-list {
+    margin-top: 32px;
+  }
 }
 
 .text-script-logo {

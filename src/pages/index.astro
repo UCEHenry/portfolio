@@ -1,97 +1,14 @@
 ---
-import Layout from '../layouts/MainLayout.astro';
-import { SOCIALS } from "../data/socials";
-import Component from '../components/Component.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Content from "../components/Content.astro";
 ---
 
-<Layout title='Henry'>
+<Layout title="Henry">
 	<div class="main-container">
-		<div class="dual-big-screen-container">	
-			<header class="sticky-left-header">
-				<div>
-					<h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Henry</h1>
-					<h2 class="mt-3 text-lg tracking-tight text-slate-200 sm:text-xl">Software Developer</h2>
-					<nav>
-						<ul class="list-spacing">
-							<div class="text-script-logo">
-								<span class="text-script-logo-mark">&gt;</span>
-								<span class="text-script-logo-text"># cd ~/</span>
-								<span class="text-script-logo-cursor"></span>
-							</div>
-							<li>
-								About
-							</li>
-							<li>
-								Experience
-							</li>
-							<li>
-								Projects
-							</li>
-						</ul>
-					</nav>
-				</div>
-
-				{
-					SOCIALS.length && (
-						<ul
-						class="ml-1 mt-8 flex items-center lg:justify-normal"
-						aria-label="Social media"
-						>
-						{SOCIALS.map((social) => (
-							<li class="mr-5 shrink-0 text-xs">
-								<a
-									class="block hover:text-slate-200"
-									href={social.url}
-									target="_blank"
-									rel="noreferrer noopener"
-									aria-label={`${social.name} (opens in a new tab)`}
-								>
-									<span class="sr-only">{social.name}</span>
-									{<Component component={social.icon} />}
-								</a>
-							</li>
-						))}
-						</ul>
-					)
-				}
-			</header>
-			
-			<main id="content" class="pt-24 lg:w-1/2 lg:py-24">
-				<section
-					id="about"
-					class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-					aria-label="About me"
-				>
-					<div class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-						<h2 class="text-sm font-bold uppercase tracking-widest text-neutral-200 lg:sr-only">
-							About
-						</h2>
-					</div>
-					<div>
-						<div class="mb-4 space-y-4">
-							<p>
-								I have a Bachelor’s of Science in Computer Science from RHUL,
-								with approximately a year of industry experience in Software 
-								Development.
-							</p>
-							<p>
-								Being a very logical person, I enjoy back-end development 
-								and code optimisation. Though it's crucial to highlight the 
-								finished product, I do take pride in my designs, with a clear, 
-								simple, responsive, and contemporary UI. 
-							</p>
-							<p>
-								Feel free to reach out; I’ll try to respond within a few days.
-							</p>
-							<p>
-								My Technical Skills:
-								JAVA, Python, JavaScript, Express, React, Astro, 
-								TDD (Jest), HTML/CSS, SQL, Mongo, and Python
-							</p>
-						</div>
-					</div>
-				</section>
-			</main>
+		<div class="dual-big-screen-container">
+			<Header />
+			<Content />
 		</div>
 	</div>
 </Layout>
