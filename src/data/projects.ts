@@ -8,39 +8,45 @@ interface ProjectProp {
 
 export const PROJECT: ProjectProp[] = [
     {
-        projectURL:"https://fp-habits.netlify.app",
+        projectURL: "https://fp-habits.netlify.app",
         title: "Habit Tracker",
         description:
-            "Habit Tracking App",
+            "Habit Tracking application - users have to create an account, to keep track of their personalised daily habits. Implemented jwt, and bcrypt for hashing users password to store in MongoDB.",
         technologies: [
-            "Javascript",
-            "Python",
             "HTML",
             "CSS",
-            "REST API",
-            "CRUD API",
-            "React",
+            "Javascript",
+            "Mongo"
         ],
         imagePath: "../assets/habit.png",
     },
     {
-        projectURL:"https://quiz-war.netlify.app",
+        projectURL: "https://quiz-war.netlify.app",
         title: "Quiz War",
         description:
-            "Quiz War App",
+            "Quiz War – using web sockets for limited online players in a game. Making use of Open Trivia DB API, React, and PostgreSQL for storing the users information.",
         technologies: [
-            "Node.js"
+            "React",
+            "Redux",
+            "Node.js",
+            "Jest",
+            "Docker",
+            "Express",
+            "Jest",
+            "PostgreSQL",
         ],
         imagePath: "../assets/quiz.png",
     },
     {
-        projectURL:"https://coding-cats.netlify.app",
+        projectURL: "https://coding-cats.netlify.app",
         title: "Coding-Cats Blogpage",
         description:
-            "Blogpage",
+            "Journal website - users can post anything anonymously and attach a giphy (using their API endpoints). Backend data is sent and stored in a .json file (no database).",
         technologies: [
-            "Next"
+            "HTML",
+            "CSS",
+            "Javascript",
         ],
-        imagePath: "../assets/anonBlog.png",
+        imagePath: "../assets/journal.png",
     },
 ];

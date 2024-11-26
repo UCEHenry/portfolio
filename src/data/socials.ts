@@ -1,5 +1,6 @@
 import IconGithub from "../components/icons/github.astro";
 import IconLinkedin from "../components/icons/linkedin.astro";
+import IconMail from "../components/icons/mail.astro";
 
 export const SOCIALS = [
   {
@@ -11,5 +12,10 @@ export const SOCIALS = [
     name: "Linkedin",
     url: "https://www.linkedin.com/",
     icon: IconLinkedin,
+  },
+  {
+    name: "Mail",
+    url: "https://www.linkedin.com/",
+    icon: IconMail,
   },
 ];

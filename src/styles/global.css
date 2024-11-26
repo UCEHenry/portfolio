@@ -68,7 +68,7 @@
 
 .nav-list {
   margin-top: 4rem;
-  width: 100%;
+  max-width: max-content;
 }
 
 @media (max-width: 1023px) {

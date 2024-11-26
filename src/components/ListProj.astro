@@ -4,14 +4,6 @@ import TechLabel from "./TechLabel.astro";
 import { Image } from 'astro:assets'
 import type { ImageMetadata } from 'astro';
 
-interface ProjectProp {
-    projectURL: string;
-    title: string;
-    description: string;
-    technologies: string[];
-    imagePath: string;
-}
-
 const { projectURL, title, description, technologies, imagePath } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>('../assets/*.{jpeg,jpg,png,gif}')
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
