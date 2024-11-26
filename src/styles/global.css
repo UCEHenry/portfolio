@@ -112,7 +112,7 @@
 #typingCursor {
   display: inline-block;
   width: 10px;
-  height: 3px;
+  height: 2px;
   background: #f67124;
   border-radius: 1px;
   animation: blinker 1s linear infinite;

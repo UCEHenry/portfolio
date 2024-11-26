@@ -1,4 +1,6 @@
 ---
+import TechLabel from './TechLabel.astro';
+
 interface Props {
     dates: string;
     title: string;
@@ -37,22 +39,7 @@ const { dates, title, company, description, technologies } = Astro.props;
             <p class="mt-2 text-sm leading-normal">
                 {description}
             </p>
-            {
-                technologies.length && (
-                    <ul
-                        class="mt-2 flex flex-wrap"
-                        aria-label="Technologies used"
-                    >
-                        {technologies.map((technology) => (
-                            <li class="mr-1.5 mt-2">
-                                <div class="flex items-center backdrop-blur-sm rounded-full border border-neutral-700 border-opacity-50 shadow bg-neutral-400/10 px-3 py-1 text-xs font-medium leading-5 text-orange-500">
-                                    {technology}
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
-                )
-            }
+            <TechLabel technologies={technologies} />
         </div>
     </div>
 </li>
