@@ -1,6 +1,6 @@
 ## Portfolio
 
-Website to be deployed.
+https://www.henry-d.netlify.app
 Built with Astro, and Tailwind CSS.
 
 ## 🚀 Project Structure
@@ -11,6 +11,14 @@ Inside of your Astro project, you'll see the following folders and files:
 /
 ├── public/
 ├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── icons/
+│   │   └── sections/
+│   ├── data/
+│   ├── layouts/
+│   ├── scripts/
+│   ├── styles/
 │   └── pages/
 │       └── index.astro
 └── package.json
