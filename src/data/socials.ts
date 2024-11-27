@@ -5,7 +5,7 @@ import IconMail from "../components/icons/mail.astro";
 export const SOCIALS = [
   {
     name: "Github",
-    url: "https://github.com/ucehenrys",
+    url: "https://github.com/",
     icon: IconGithub,
   },
   {
@@ -15,7 +15,7 @@ export const SOCIALS = [
   },
   {
     name: "Mail",
-    url: "https://www.linkedin.com/",
+    url: "mailto:",
     icon: IconMail,
   },
 ];

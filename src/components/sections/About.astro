@@ -1,5 +1,6 @@
 ---
-
+import TechLabel from "../TechLabel.astro"
+import { SKILLS } from "../../data/skills";
 ---
 
 <div class="mb-4 space-y-4">
@@ -18,8 +19,10 @@
         Feel free to reach out; I’ll try to respond within a few days.
     </p>
     <p>
-        My Technical Skills:
-        JAVA, Python, JavaScript, Express, React, Astro, 
-        TDD (Jest), HTML/CSS, SQL, Mongo, and Python
+        -------------------
     </p>
+    <p>
+        Tech Stack:
+    </p>
+    <TechLabel technologies={SKILLS}/>
 </div>
