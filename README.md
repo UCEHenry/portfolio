@@ -1,6 +1,6 @@
 ## Portfolio
 
-https://www.henry-d.netlify.app
+https://henry-d.netlify.app
 
 Built with Astro, and Tailwind CSS.
 
