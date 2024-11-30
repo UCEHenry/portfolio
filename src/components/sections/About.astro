@@ -26,18 +26,18 @@ import { SKILLS } from "../../data/skills";
     {
         SKILLS.length && (
             <ul
-                class="grid mx-1 mt-8 items-center grid-flow-row grid-cols-6 lg:grid-cols-7"
+                class="grid mx-1 mt-8 items-center grid-cols-5 md:grid-cols-7"
                 aria-label="Technical skills"
             >
                 {SKILLS.map((tech) => (
-                    <li class="ml-1 mt-3 shrink-0 text-xs text-center">
+                    <li class="ml-1 mt-3 shrink-0 text-xs">
                         <span class="flex justify-center">
                             <span class="block w-9 h-9">
                                 <span class="sr-only">{tech.name}</span>
                                 <Component component={tech.icon} /> 
                             </span>
                         </span>
-                        <h2 class="text-slate-200">{tech.name}</h2>
+                        <h2 class="text-slate-200 text-center">{tech.name}</h2>
                     </li>
                 ))}
             </ul>
