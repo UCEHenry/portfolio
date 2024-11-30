@@ -54,7 +54,7 @@ import ArrowRight from "./icons/chevonRight.astro";
     {
         SOCIALS.length && (
             <ul
-            class="ml-1 mt-8 flex items-center lg:j hover:text-orange-200ustify-normal"
+            class="ml-1 mt-8 flex items-center"
             aria-label="Social media"
             >
             {SOCIALS.map((social) => (
@@ -67,7 +67,7 @@ import ArrowRight from "./icons/chevonRight.astro";
                         aria-label={`${social.name} (opens in a new tab)`}
                     >
                         <span class="sr-only">{social.name}</span>
-                        {<Component component={social.icon} />}
+                        <Component component={social.icon} />
                     </a>
                 </li>
             ))}
